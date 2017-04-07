@@ -15,19 +15,29 @@ img {
     height: auto;
 }
 
+.image img {
+    position: relative;
+    max-width: 100%;
+    opacity: 0.9;
+    top: 10px;
+}
+
+
 header{
-    padding-top: 1px;
-    background: url(/img/background9.jpg) no-repeat center top fixed;
+    background: url(/img/background12.png) no-repeat center top ;
+}
+
+.wrapper{
+
 }
 
 .fixedMenu{
     margin-left: 0;
-    position: fixed;
     border-bottom: solid 1px #ffffff;
     width: 100%;
-    color: #ffffff;
-    background-color: inherit;
+    color: #0f0f0f;
     z-index: 300;
+    opacity: 0.8;
 }
 
 .fixedMenu a{
@@ -38,25 +48,55 @@ header{
     line-height: 15px;
 }
 
-
-
-
 .dropdown-toggle {
     font-size: 24px;
 }
 
 a.dropdown-toggle {
-    color: #c12e2a;
+    color: #636363;
 }
 
 .menu{
-    opacity: 0.5;
-    border: solid 1px #ffffff;
-    width: 99%;
-    margin-left: 10px;
-    margin-right: 20px;
-    background-color: #ffffff;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    background-color: #F8F8F8;
 }
+
+
+.card{
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 220px;
+    height: 400px;
+    position: relative;
+    border: 1px solid #e2e5e9;
+}
+
+.card p{
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+
+.card:hover {
+    box-shadow: 0 0 10px -2px #5c5c5c;
+}
+
+.card img{
+position: relative;
+    max-width: 90%;
+top:-50px;
+    padding-top: -40px;
+    width: 150px;
+}
+
+
 
 .slogan {
 
@@ -69,7 +109,7 @@ a.dropdown-toggle {
 }
 
 .menu .navbar-nav li a{
-    color: #c9302c;
+    color: #636363;
 }
 
 .menu .navbar-nav li a:hover{
@@ -78,7 +118,13 @@ a.dropdown-toggle {
 
 
 .image{
+    padding-top: 0;
+    padding-bottom: 40px;
     text-align: center;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    background: radial-gradient(rgba(255,255,255,.5),rgba(255,255,255,.2));
 }
 
 .image img{
@@ -92,20 +138,16 @@ a.dropdown-toggle {
 .square{
     padding-left: 15%;
     padding-top: 20px;
+
+
 }
 
 
 #square {
-    opacity: 0.7;
-    width: 360px;
-    height: 330px;
-    background: #ffffff;
-    text-shadow: #5dc8e5 0 0 10px;
-    border-radius: 10px;
-    border: solid 1px #c9302c;
-    box-shadow: 0 0 5px 2px;
+    width: 500px;
+    height: 407px;
+    background-image: url(/img/glass.png) ;
     z-index: 4;
-
 }
 
 #square h4{
@@ -113,13 +155,21 @@ a.dropdown-toggle {
     color: #0f0f0f;
 }
 
+#quality{
+    width: 500px;
+    height: 407px;
+
+    z-index: 4;
+}
+
 .red{
-    color: #c12e2a;
+    color: #F20C6C;
+    font-size: 20px;
+   text-align: left;
 }
 
 
 /* контент  */
-
 .content{
     background-color: #ffffff;
     font-size: 28px;
@@ -132,10 +182,15 @@ a.dropdown-toggle {
 
 
 /*  футер  */
-
 footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #F0F0F0;
     color: #333333;
+}
+
+footer p{
+    font-size: 14px;
 }
 
 
@@ -144,7 +199,46 @@ footer{
     .slogan {
         margin-top: 115px;
     }
+
+    .card{
+        width: 200px;
+        height: 400px;
+    }
+
 }
+
+@media only screen and (max-width: 1222px) {
+    .card{
+        width: 170px;
+        height: 400px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 1343px) {
+
+    .card{
+        width: 170px;
+        height: 450px;
+    }
+    .card button{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1330px) {
+
+    .card{
+        width: 140px;
+        height: 450px;
+    }
+
+}
+
+
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -161,6 +255,19 @@ footer{
     .square{
         padding-left: 2%;
     }
+
+    .card{
+        width: 180px;
+        height: 400px;
+    }
+
+    .card p{
+        font-size: 13px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+
 }
 
 /* Small Devices, Tablets */
@@ -174,6 +281,14 @@ footer{
 
 
     }
+
+    .card{
+        width: 200px;
+        height: 400px;
+    }
+
+
+
 
 
 }
@@ -196,6 +311,45 @@ footer{
     }
     .square{
         padding-left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 427px) {
+
+    .card{
+        width: 150px;
+        height: 380px;
+    }
+
+    .card p{
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+
+    .card button{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 327px) {
+
+    .card{
+        width: 130px;
+        height: 370px;
+    }
+
+    .card p{
+        font-size: 13px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+
+    .card button{
+        font-size: 12px;
     }
 
 }
